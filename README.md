@@ -48,7 +48,7 @@ if rol == "🔐 Modo Admin":
     
     password = st.text_input("🔑 Ingresa la contraseña de Administrador", type="password")
     
-    if password == ADMIN_PASSWORD:
+    if password == ADMIN_PASSWORD = st.secrets.get("ADMIN_PASSWORD", "default_password")
         st.success("✅ Acceso Correcto")
         # Aquí va todo el panel admin (lo mantengo corto por ahora)
         st.info("Panel de administración cargado correctamente.")
